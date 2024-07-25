@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2F4F4F">
     <title>Alexandre Delaboneta | Portfolio</title>
+
+    <script>
+        let originalTitle = document.title;
+        let newTitle = "Desenvolvedor Web FullStack";
+        let isOriginlTitle = true;
+
+        function blinkTitle() {
+            document.title = isOriginlTitle ? newTitle : originalTitle;
+            isOriginlTitle = !isOriginlTitle;
+        }
+
+        let titleInterval = setInterval(blinkTitle, 1500);
+    </script>
 
     <!-- Tags para SEO-->
     <meta name="description" content="Desde criança, sempre fui fascinado pela tecnologia e sua 
