@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4E343D">
+    <title>Alexandre Delaboneta | Portfolio</title>
+
+    <script>
+        let originalTitle = document.title;
+        let newTitle = "Desenvolvedor Web Full Stack IA";
+        let isOriginlTitle = true;
+
+        function blinkTitle() {
+            document.title = isOriginlTitle ? newTitle : originalTitle;
+            isOriginlTitle = !isOriginlTitle;
+        }
+
+        let titleInterval = setInterval(blinkTitle, 1500);
+    </script>
+
+    <!-- Tags para SEO-->
+    <meta name="description" content="Minha versatilidade e polivalência são meus maiores diferenciais. 
+    Não apenas escrevo código, mas crio experiências que geram impactos reais, pois para mim: alinhar 
+    estratégias e resultados são igualmente proporcionais.">
+    <meta name="keywords" content="Alexandre Delaboneta, desenvolvedor full stack, desenvolvimento web, 
+    desenvolvedor web, frontend, backend, programação, código, criação de sites, software, UI/UX design, 
+    inteligência artificial, IA, machine learning, tecnologia, aplicações web, desenvolvimento de software, 
+    javascript, typescript, html, tailwind, css, react, node.js, next.js, testes automatizados, api rest, 
+    banco de dados, sql, mysql, postgresql, mongodb, freelancer, Blumenau, Santa Catarina, SC">
+
+    <meta name="author" content="Alexandre Delaboneta">
+    <!---->
+
+    <!-- Tagas para SMO -->
+    <meta property="og:title" content="Alexandre Delaboneta | Portfolio">
+    <meta property="og:description" content="Minha versatilidade e polivalência são meus maiores diferenciais. 
+    Não apenas escrevo código, mas crio experiências que geram impactos reais, pois para mim: alinhar 
+    estratégias e resultados são igualmente proporcionais.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/130688319?v=4">
+    <meta property="og:url" content="https://imxandx.github.io/portfolio">
+    <!---->
+
+    <!-- Preload imagens -->
+    <link rel="preload" as="image" href="./assets/images/BRANCO - Fundo Preto.jpg">
+    <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+    <!---->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+    <link rel="shortcut icon" href="./assets/images/BRANCO - Sem Fundo.png">  
+</head>
+<body class="active" id="top">
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/BRANCO - Fundo Preto.jpg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/BRANCO - Sem Fundo.png" width="84" height="26" alt="logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Início</a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Habilidades</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Apresentação</a>
+          </li>
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Projetos</a>
+          </li>
+          <li>
+            <a href="#review" class="navbar-link" data-nav-link>Observações</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="https://linkedin.com/in/alexandre-delaboneta" class="btn btn:hover" target="_blank" rel="noopener">
+        <span class="span">Linkedin</span>
+        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+      </a>
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+      <div class="hero text-center" id="home">
+        <div class="container">
+          <div class="banner-outline has-after">
+            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+              <img src="./assets/images/me.jpg" width="500" height="680" alt="" class="img-cover">
+            </div>
+            <span class="span title">Alexandre Delaboneta</span>
+          </div>
+          <div class="hero-content">
+            <h1 class="h1 title">Alexandre Delaboneta <br> <span>Desenvolvedor Web Full Stack IA</span></h1>
+            <div class="wrapper">
+              <a href="./assets/CV - ALEXANDRE DELABONETA.pdf" download="CV - ALEXANDRE DELABONETA.pdf"
+              type="application/pdf" class="btn btn:hover">
+                <span class="span">Download CV</span>
+                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+              </a>
+              <p class="hero-text">
+                &rdquo; Transformando sonhos em realidade; linhas de código em sorrisos. &rdquo;
+              </p>
+            </div>
+          </div>
+          <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+          <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+        </div>
+      </div>
+
+
+
+
+      <section class="service text-center" aria-label="my services" id="service">
+        <div class="container">
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title" id="card-title">
+                  <a href="#card-title">
+                    Responsabilidade
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title" id="card-title">
+                  <a href="#card-title">
+                    Resolução de <br>
+                    Problemas
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title" id="card-title">
+                  <a href="#card-title">
+                    Trabalhar em <br>
+                    Equipe
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-4.svg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+                <h3 class="card-title" id="card-title">
+                  <a href="#card-title">
+                    Compromissado
+                  </a>
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+          <div class="tab-container">
+            <ul class="tab-btn-list">
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">Apresentação</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">Habilidades</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="interview">Contatar</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="awward">Certificados</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="exhibition">Exposição</button>
+              </li>
+            </ul>
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                  <img src="./assets/images/about-banner.jpg" width="570" height="420" loading="lazy" alt="about banner"
+                    class="img-cover">
+                </figure>
+                <div class="about-content">
+                  <h2 class="h4 title section-title">
+                    Um palco muito pequeno num vasto cósmico.
+                  </h2>
+                  <p class="section-text">
+                    Sempre me interessei por como a tecnologia pode transformar ideias
+                    em soluções reais. Hoje, como desenvolvedor, meu foco é criar aplicações web que façam a
+                    diferença, seja facilitando a vida das pessoas ou ajudando negócios a crescerem.
+                  </p>
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <p class="list-title">Nome</p>
+                      <span class="span title h5">Alexandre Delaboneta</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Telefone</p>
+                      <span class="span title h5">+55 (47) 99142-5257</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Email</p>
+                      <span class="span title h5">delabonetacoder@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+                <div class="skill-content">
+                  <h3 class="h4 title section-title">
+                    Aprendizado Contínuo.
+                  </h3>
+                  <p class="section-text">
+                    Como Desenvolvedor Web Full Stack, tenho a capacidade de lidar com tanto questões do frontend 
+                    quanto o backend e a gestão de banco de dados, sempre focado em soluções eficientes e modernas. 
+                    Acredito na importância do aprendizado contínuo e estou constantemente aprimorando minhas 
+                    habilidades por meio de estudos e projetos. Além disso, sou proativo, resolvo problemas 
+                    de forma eficaz e valorizo o trabalho em equipe para entregar resultados de alta qualidade.
+                  </p>
+                  <ul class="skill-list">
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Proatividade e Determinação</span>
+                        <span class="value">100%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Desenvolvimento de Websites e Softwares</span>
+                        <span class="value">90%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Web Design</span>
+                        <span class="value">85%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/html-css-js.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="interview">
+              <div class="grid-list">
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="./assets/images/logotipo-wpp.png" width="376" height="420" loading="lazy" alt="interview 2"
+                    class="img-cover">
+                  <button class="btn btn:hover"><a href="https://api.whatsapp.com/send?phone=5547991425257&text=Ol%C3%A1,%20est%C3%A1%20dispon%C3%ADvel?%20" target="_blank" rel="noopener">Go</a></button>
+                </div>
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="./assets/images/logotipo-in.png" width="376" height="420" loading="lazy" alt="interview 3"
+                    class="img-cover">
+                  <button class="btn btn:hover"><a href="https://linkedin.com/in/alexandre-delaboneta" target="_blank" rel="noopener">Go</a></button>
+                </div>
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="./assets/images/logotipo-github.png" width="376" height="420" loading="lazy" alt="interview 3"
+                    class="img-cover">
+                  <button class="btn btn:hover"><a href="https://github.com/imxandx" target="_blank" rel="noopener">Go</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="awward">
+              <ul class="grid-list">
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-PG.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-DC.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-HT-02.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-DS-17.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-CV.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      <img src="../portfolio/certificados/assets/Certificado-DC-02.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+              </ul>
+              <a href="./certificados/certificados.html" class="btn btn:hover" style="margin-top: 40px;">
+                <span class="span">Ver mais</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+            <div class="tab-content" data-tab-content="exhibition">
+              <ul class="grid-list">
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-website.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-star-wars.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-youdemi.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-woodex.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-homeverse.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                      <img src="./assets/images/img-blog_09.png" width="376" height="200" loading="lazy" alt="image"
+                        class="img-cover">
+                    </figure>
+                    <div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="https://github.com/imxandx" class="btn btn:hover" style="margin-top: 40px;">
+                <span class="span">Ver mais</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="section-skills">
+        <div class="headline-sobre" data-aos="fade-up" data-aos-duration="2000">
+          <div class="headline-scroll" id="headline-scroll">
+              <span class="bold">JAVASCRIPT</span>
+              <span class="divisor"></span>
+              <span class="light">REACT.JS</span>
+              <span class="divisor"></span>
+              <span class="bold">NEXT.JS</span>
+              <span class="divisor"></span>
+              <span class="light">TESTES</span>
+              <span class="divisor"></span>
+              <span class="bold">NODE.JS</span>
+              <span class="divisor"></span>
+              <span class="light">SQL</span>
+              <span class="divisor"></span>
+              <span class="bold">TYPESCRIPT</span>
+              <span class="divisor"></span>
+              <span class="light">API's</span>
+              <span class="divisor"></span>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="section cta" aria-label="work with me">
+        <div class="container">
+          <h2 class="title h2 section-title text-center">
+            " Traduzindo Ideias Em Realidade Digital... "
+          </h2>
+          <a href="https://github.com/imxandx" class="btn btn:hover" target="_blank" rel="noopener">
+            <span class="span">Github</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+      </section>
+
+
+
+
+      <section class="section project" aria-label="my latest projects" id="project">
+        <ul class="slider-list">
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/img-barber-shop.png" width="1000" height="763" loading="lazy"
+                  alt="" class="img-cover">
+                <a href="https://imxandx.github.io/barber-shop" target="_blank" rel="noopener" class="btn btn:hover">
+                  <span class="span">Detalhes do Projeto</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Web, Product</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Website sobre uma Barbearia</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/igm-restaurante-moderno.png" width="1000" height="763" loading="lazy"
+                  alt="" class="img-cover">
+                <a href="https://imxandx.github.io/restaurante-moderno" target="_blank" rel="noopener" class="btn btn:hover">
+                  <span class="span">Detalhes do Projeto</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Web, Product</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Website sobre um Restaurante Moderno</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/img-agencia-viagens.png" width="1000" height="763" loading="lazy"
+                  alt="" class="img-cover">
+                <a href="https://imxandx.github.io/agencia-viagens" target="_blank" rel="noopener" class="btn btn:hover">
+                  <span class="span">Detalhes do Projeto</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="card-subtitle">Web, Product</p>
+                <h3 class="title h3">
+                  <a href="#" class="card-title">Website sobre uma Agência de Viagens</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+
+
+      <section class="section testi" aria-label="what our client says" id="review">
+        <div class="container">
+
+          <div class="testi-content">
+            <blockquote class="title h4 section-text">
+              &ldquo; Programar é ver a criatividade ganhar vida com cada linha de código, é 
+              transformar ideias em experiências digitais. &rdquo;
+            </blockquote>
+            <div class="profile-card">
+              <figure class="card-banner img-holder" style="--width: 70; --height: 70;">
+                <img src="./assets/images/BRANCO - Sem Fundo.png" style="width: 70px; height:70px;" loading="lazy" alt=""
+                  class="img-cover">
+              </figure>
+              <div>
+                <p class="title h5 card-title">Alexandre Delaboneta</p>
+                <p class="card-subtitle">Desenvolvedor Full Stack IA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="section contact" aria-label="contact me" id="contact">
+        <div class="container">
+          <h2 class="title h2 section-title">Entre Em Contato</h2>
+          <div class="contact-content">
+            <form action="https://formsubmit.co/ajax/delabonetacoder@gmail.com" method="POST"
+            id="contact-form" 
+            data-form
+            target="_blank"
+            rel="noopener"
+            autocomplete="off"
+            class="contact-form">
+              <input type="text" name="name" placeholder="Nome Sobrenome" autocomplete="off" required class="input-field">
+              <input type="email" name="email" placeholder="Email" autocomplete="off" required
+                class="input-field">
+              <input type="tel" name="fone" placeholder="Telefone" autocomplete="off" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" maxlength="15" class="input-field">
+              <textarea name="message" placeholder="Menssagem" required class="input-field"></textarea>
+              <button type="submit" class="btn btn:hover" id="send-button" data-button>
+                <span class="span">Enviar</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+            <iframe id="map" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227807.68380735404!2d-49.26391107328391!3d-26.856008104051238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1e408b5c3095%3A0xacfb8520bc1a7644!2sBlumenau%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1737563633944!5m2!1spt-BR!2sbr" width="600px" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6">+55 (47) 99142-5257</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <address class="title h6">
+                    Blumenau - Santa Catarina
+                  </address>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+                <div>
+                  <span class="title h6">delabonetacoder@gmail.com</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        Copyright & Design Alexandre Delaboneta - 2025
+      </p>
+      <a href="#top" class="back-top-btn">
+        <span class="span">Voltar Ao Topo</span>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+    </div>
+  </footer>
+
+
+
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+
+
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>
+</html>
