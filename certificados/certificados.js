@@ -1,44 +1,36 @@
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
+document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.slider');
+    const prevBtn = document.getElementById('prev-button');
+    const nextBtn = document.getElementById('next-button');
+    let currentSlide = 0;
 
-let currentSlide = 0;
+    // função para esconder todos os slides
+    const hideAllSlides = () => {
+        sliders.forEach(slide => slide.classList.remove('on'));
+    };
 
-function hideSlider() {
-    slider.forEach(item => item.classList.remove('on'))
-    }
+    // função para mostrar o slide atual
+    const showCurrentSlide = () => {
+        sliders[currentSlide].classList.add('on');
+    };
 
-    function showSlider() {
-    slider[currentSlide].classList.add('on')
-}
+    // avançar slide
+    const nextSlide = () => {
+        hideAllSlides();
+        currentSlide = (currentSlide + 1) % sliders.length;
+        showCurrentSlide();
+    };
 
-function nextSlider() {
-    hideSlider()
-    if(currentSlide === slider.length -1) {
-        currentSlide = 0
-    } else {
-        currentSlide++
-    }
-    showSlider()
-}
+    // voltar slide
+    const prevSlide = () => {
+        hideAllSlides();
+        currentSlide = (currentSlide - 1 + sliders.length) % sliders.length;
+        showCurrentSlide();
+    };
 
-function prevSlider() {
-    hideSlider()
-    if(currentSlide === 0) {
-        currentSlide = slider.length -1
-    } else {
-        currentSlide--
-    }
-    showSlider()
-}
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
 
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
-
-document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('video-background');
-    video.addEventListener('ended', function () {
-        this.currentTime = 0;
-        this.play();
-    }, false);
+    // iniciar com o primeiro slide visível
+    showCurrentSlide();
 });
