@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexandre Delaboneta — Desenvolvedor Full Stack IA</title>
+  <meta name="description" content="Alexandre Delaboneta, desenvolvedor Full Stack com foco em Inteligência Artificial. Não apenas escrevo código: crio experiências que geram impacto real.">
+  <meta name="keywords" content="Alexandre Delaboneta, desenvolvedor full stack, inteligência artificial, IA, desenvolvimento web, frontend, backend, javascript, typescript, react, node.js, next.js, python, Blumenau, Santa Catarina">
+  <meta name="author" content="Alexandre Delaboneta">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alexandre Delaboneta — Desenvolvedor Full Stack IA">
+  <meta property="og:description" content="Transformando sonhos em realidade; linhas de código em sorrisos.">
+  <meta property="og:image" content="./assets/img/me.webp">
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+  <link rel="preload" href="./assets/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__logo" viewBox="0 0 2048 2048" fill="none">
+        <circle class="loader__ring" cx="1024" cy="1024" r="745" stroke="currentColor" stroke-width="16"/>
+        <g transform="translate(0 2048) scale(.1 -.1)"><path class="loader__letters" fill="currentColor" d="M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z"/></g>
+      </svg>
+      <div class="loader__meta">
+        <span class="mono">Alexandre Delaboneta</span>
+        <span class="loader__count mono"><span data-count>000</span>%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR / FX ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#inicio" class="nav__logo" aria-label="Início" data-cursor="Topo">
+      <svg viewBox="0 0 2048 2048" fill="none" aria-hidden="true">
+        <circle cx="1024" cy="1024" r="745" stroke="currentColor" stroke-width="44"/>
+        <g transform="translate(0 2048) scale(.1 -.1)"><path fill="currentColor" d="M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z"/></g>
+      </svg>
+    </a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#sobre" class="roll"><span data-text="Sobre">Sobre</span></a>
+      <a href="#diferenciais" class="roll"><span data-text="Diferenciais">Diferenciais</span></a>
+      <a href="#stack" class="roll"><span data-text="Stack">Stack</span></a>
+      <a href="#certificados" class="roll"><span data-text="Certificados">Certificados</span></a>
+      <a href="#contato" class="roll"><span data-text="Contato">Contato</span></a>
+    </nav>
+    <div class="nav__status mono">
+      <span class="pulse"></span> Blumenau, SC <span class="nav__time" data-clock>--:--</span>
+    </div>
+    <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <div class="menu__bg"></div>
+    <nav class="menu__links">
+      <a href="#sobre"><small class="mono">01</small>Sobre</a>
+      <a href="#diferenciais"><small class="mono">02</small>Diferenciais</a>
+      <a href="#stack"><small class="mono">03</small>Stack</a>
+      <a href="#certificados"><small class="mono">04</small>Certificados</a>
+      <a href="#contato"><small class="mono">05</small>Contato</a>
+    </nav>
+  </div>
+
+  <main id="inicio">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-section>
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__top container">
+        <span class="chip chip--status"><span class="pulse"></span><code>status: <b>online</b></code></span>
+        <span class="mono hero__index">Código · Design · Inteligência Artificial</span>
+      </div>
+
+      <h1 class="hero__title container" aria-label="Alexandre Delaboneta">
+        <span class="hero__line hero__line--1" data-hero-split>Alexandre</span>
+        <span class="hero__line hero__line--2">
+          <span class="hero__mark" data-cursor="LAE" aria-hidden="true">
+            <svg viewBox="0 0 2048 2048" fill="none">
+              <circle class="hero__mark-orbit" cx="1024" cy="1024" r="980" stroke="currentColor" stroke-width="10" stroke-dasharray="40 70"/>
+              <circle class="hero__mark-ring" cx="1024" cy="1024" r="745" stroke="currentColor" stroke-width="34"/>
+              <g transform="translate(0 2048) scale(.1 -.1)"><path class="hero__mark-letters" fill="currentColor" d="M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z"/></g>
+              <circle class="hero__mark-sat" cx="1024" cy="44" r="46"/>
+            </svg>
+          </span>
+          <em data-hero-split>Delaboneta</em>
+        </span>
+      </h1>
+
+      <div class="hero__bottom container">
+        <div class="hero__role">
+          <p class="mono hero__label">( Desenvolvedor Full Stack IA )</p>
+          <p class="hero__lead">Crio aplicações que unem <em>código</em>, <em>design</em> e <em>inteligência artificial</em> para gerar impacto real — em pessoas e em negócios.</p>
+        </div>
+
+        <div class="hero__rotator mono" aria-hidden="true">
+          <span>Eu construo</span>
+          <span class="rotator"><span>experiências</span><span>sites</span><span>agentes de IA</span><span>landing pages</span><span>API's</span><span>sistemas</span><span>lojas virtuais</span></span>
+        </div>
+
+        <a class="cv-btn" href="./assets/cv-alexandre-delaboneta.pdf" download="CV - Alexandre Delaboneta.pdf" data-cursor="Baixar">
+          <svg class="cv-btn__ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circ">DOWNLOAD CV • DOWNLOAD CV • DOWNLOAD CV • </textPath></text>
+          </svg>
+          <span class="cv-btn__core">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v13m0 0l-5.5-5.5M12 17l5.5-5.5M5 20h14" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="sr-only">Download do currículo</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto container" data-section>
+      <p class="mono label"><span>●</span> Manifesto</p>
+      <p class="manifesto__text" data-scrub-words>
+        Transformando sonhos em realidade; linhas de código em sorrisos. Minha versatilidade e polivalência são meus maiores diferenciais — não apenas escrevo código, crio experiências que geram impacto real, porque alinhar estratégia e resultado é igualmente proporcional.
+      </p>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="about container" id="sobre" data-section>
+      <div class="section-head">
+        <p class="mono label"><span>01</span> Sobre</p>
+        <span class="section-head__line"></span>
+      </div>
+
+      <div class="about__grid">
+        <figure class="about__photo" data-tilt data-cursor="Alê">
+          <div class="about__photo-inner">
+            <img src="./assets/img/me.webp" alt="Alexandre Delaboneta" width="1100" height="1540" loading="lazy">
+          </div>
+          <div class="about__scan" aria-hidden="true"></div>
+          <figcaption class="mono">
+            <span>Alexandre D.</span><span>Blumenau — SC</span>
+          </figcaption>
+          <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ2" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+            <circle cx="100" cy="100" r="96" class="badge__bg"/>
+            <text><textPath href="#circ2">FULL STACK • INTELIGÊNCIA ARTIFICIAL • </textPath></text>
+            <path d="M100 76 L106 94 L124 100 L106 106 L100 124 L94 106 L76 100 L94 94Z" class="badge__star"/>
+          </svg>
+        </figure>
+
+        <div class="about__content">
+          <h2 class="display" data-split>Um palco muito pequeno num <em>vasto cósmico.</em></h2>
+          <p class="about__bio" data-fade>
+            Sempre me interessei por como a tecnologia pode transformar ideias em soluções reais. Hoje, como desenvolvedor, meu foco está em <strong>Inteligência Artificial</strong>: crio aplicações que não apenas facilitam a vida das pessoas, mas também potencializam o crescimento de negócios com inovação e otimização.
+          </p>
+
+          <dl class="about__info" data-fade>
+            <div><dt class="mono">Nome</dt><dd>Alexandre Delaboneta</dd></div>
+            <div><dt class="mono">Função</dt><dd>Full Stack · IA</dd></div>
+            <div><dt class="mono">Base</dt><dd>Blumenau, Santa Catarina</dd></div>
+            <div><dt class="mono">E-mail</dt><dd><a href="mailto:delabonetacoder@gmail.com" class="u-link">delabonetacoder@gmail.com</a></dd></div>
+          </dl>
+
+          <div class="stats">
+            <div class="stat"><span class="stat__num" data-counter="60">0</span><span class="stat__label mono">Certificados</span></div>
+            <div class="stat"><span class="stat__num" data-counter="0" data-hours>0</span><span class="stat__label mono">Horas de estudo</span></div>
+            <div class="stat"><span class="stat__num" data-counter="37" data-stack-count>0</span><span class="stat__label mono">Tecnologias</span></div>
+            <div class="stat"><span class="stat__num" data-counter="3">0</span><span class="stat__label mono">Anos de experiência</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS (pin horizontal) ============ -->
+    <section class="traits" id="diferenciais" data-section>
+      <div class="traits__track">
+        <div class="traits__intro">
+          <p class="mono label"><span>02</span> Diferenciais</p>
+          <h2 class="display">O que eu <em>trago</em><br>para a mesa.</h2>
+          <p class="traits__hint mono">Continue rolando <span>→</span></p>
+        </div>
+
+        <article class="trait">
+          <span class="trait__num">01</span>
+          <div class="trait__art" aria-hidden="true">
+            <svg viewBox="0 0 300 300" class="art art--versa">
+              <g class="spin-slow"><rect x="80" y="80" width="140" height="140" rx="4" class="draw"/></g>
+              <g class="spin-rev"><circle cx="150" cy="150" r="98" class="draw"/></g>
+              <g class="spin-slow2"><path d="M150 42 L243 204 L57 204 Z" class="draw"/></g>
+              <circle cx="150" cy="150" r="8" class="fill-acc"/>
+            </svg>
+          </div>
+          <h3>Versatilidade</h3>
+          <p>Do pixel ao servidor. Transito entre front-end, back-end, banco de dados e IA sem perder o fio da meada.</p>
+        </article>
+
+        <article class="trait">
+          <span class="trait__num">02</span>
+          <div class="trait__art" aria-hidden="true">
+            <svg viewBox="0 0 300 300" class="art art--maze">
+              <path d="M40 40 H260 V260 H40 Z M40 100 H200 M100 100 V200 M100 160 H220 M160 40 V100 M260 200 H160 V260 M220 160 V200" class="draw draw--dim"/>
+              <path d="M70 40 V70 H230 V130 H130 V230 H190 V260" class="draw draw--acc solve"/>
+              <circle cx="70" cy="40" r="7" class="fill-acc"/><circle cx="190" cy="260" r="7" class="fill-acc pulse-svg"/>
+            </svg>
+          </div>
+          <h3>Resolução de problemas</h3>
+          <p>Bugs são enigmas. Decomponho o problema, testo hipóteses e entrego a solução mais simples que funciona.</p>
+        </article>
+
+        <article class="trait">
+          <span class="trait__num">03</span>
+          <div class="trait__art" aria-hidden="true">
+            <svg viewBox="0 0 300 300" class="art art--team">
+              <g class="spin-slow">
+                <circle cx="150" cy="150" r="100" class="draw draw--dim" stroke-dasharray="4 10"/>
+                <line x1="150" y1="50" x2="150" y2="150" class="draw"/><line x1="236.6" y1="200" x2="150" y2="150" class="draw"/><line x1="63.4" y1="200" x2="150" y2="150" class="draw"/>
+                <circle cx="150" cy="50" r="16" class="node"/><circle cx="236.6" cy="200" r="16" class="node"/><circle cx="63.4" cy="200" r="16" class="node"/>
+              </g>
+              <circle cx="150" cy="150" r="24" class="fill-acc"/>
+            </svg>
+          </div>
+          <h3>Trabalho em equipe</h3>
+          <p>Código bom é código que o time entende. Comunicação clara, revisão honesta e entrega compartilhada.</p>
+        </article>
+
+        <article class="trait">
+          <span class="trait__num">04</span>
+          <div class="trait__art" aria-hidden="true">
+            <svg viewBox="0 0 300 300" class="art art--poly">
+              <g class="spin-slow"><circle cx="150" cy="150" r="120" class="draw draw--dim"/><circle cx="150" cy="30" r="7" class="fill-acc"/></g>
+              <g class="spin-rev"><circle cx="150" cy="150" r="86" class="draw"/><circle cx="236" cy="150" r="7" class="node"/></g>
+              <g class="spin-slow2"><circle cx="150" cy="150" r="52" class="draw draw--dim"/><circle cx="150" cy="202" r="7" class="fill-acc"/></g>
+              <circle cx="150" cy="150" r="14" class="node"/>
+            </svg>
+          </div>
+          <h3>Polivalência</h3>
+          <p>Estratégia, design e código na mesma mesa. Penso o produto inteiro — não só a próxima linha.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ POR QUE ============ -->
+    <section class="why container" data-section>
+      <div class="why__head">
+        <p class="mono label"><span>●</span> Por que me escolhem?</p>
+        <h2 class="display" data-split>Existem muitos <em>motivos.</em></h2>
+      </div>
+      <ul class="why__list">
+        <li class="why__row" data-cursor="✦">
+          <span class="why__fill" aria-hidden="true"></span>
+          <span class="mono why__n">01</span>
+          <span class="why__title">Projetos de alta performance</span>
+          <span class="why__desc">Código enxuto, carregamento rápido e métricas no verde.</span>
+          <svg class="why__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M22 4 L8 23 H19 L17 36 L32 16 H21 Z"/></svg>
+        </li>
+        <li class="why__row" data-cursor="✦">
+          <span class="why__fill" aria-hidden="true"></span>
+          <span class="mono why__n">02</span>
+          <span class="why__title">Design único, feito sob medida</span>
+          <span class="why__desc">Nada de template genérico: cada interface nasce para a sua marca.</span>
+          <svg class="why__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 L24 16 L36 20 L24 24 L20 36 L16 24 L4 20 L16 16 Z"/></svg>
+        </li>
+        <li class="why__row" data-cursor="✦">
+          <span class="why__fill" aria-hidden="true"></span>
+          <span class="mono why__n">03</span>
+          <span class="why__title">Atendimento focado no seu resultado</span>
+          <span class="why__desc">Escuto primeiro, codifico depois. O objetivo é o seu negócio crescer.</span>
+          <svg class="why__icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke-width="3"/><circle cx="20" cy="20" r="8" fill="none" stroke-width="3"/><circle cx="20" cy="20" r="2.5"/></svg>
+        </li>
+        <li class="why__row" data-cursor="✦">
+          <span class="why__fill" aria-hidden="true"></span>
+          <span class="mono why__n">04</span>
+          <span class="why__title">Resultados rápidos e eficientes</span>
+          <span class="why__desc">Entregas curtas, feedback constante e automações que poupam horas.</span>
+          <svg class="why__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 30 L16 18 L23 24 L34 10 M26 10 H34 V18" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ STACK (tema claro) ============ -->
+    <section class="stack" id="stack" data-section data-theme="light">
+      <div class="container">
+        <div class="section-head">
+          <p class="mono label"><span>03</span> Habilidades &amp; Stack</p>
+          <span class="section-head__line"></span>
+        </div>
+
+        <div class="stack__grid">
+          <div>
+            <h2 class="display" data-split>Aprendizado <em>contínuo.</em></h2>
+            <p class="stack__text" data-fade>Como desenvolvedor Full Stack, lido com front-end, back-end e banco de dados com foco em soluções eficientes e modernas. Sou proativo, resolvo problemas de forma eficaz e valorizo o trabalho em equipe para entregar resultados de alta qualidade.</p>
+          </div>
+
+          <div class="meters">
+            <div class="meter" data-meter="100">
+              <div class="meter__top"><span>Proatividade &amp; Determinação</span><span class="meter__val mono"><b>0</b>%</span></div>
+              <div class="meter__bar"><span></span></div>
+            </div>
+            <div class="meter" data-meter="90">
+              <div class="meter__top"><span>Desenvolvimento de Websites &amp; Softwares</span><span class="meter__val mono"><b>0</b>%</span></div>
+              <div class="meter__bar"><span></span></div>
+            </div>
+            <div class="meter" data-meter="85">
+              <div class="meter__top"><span>Web Design</span><span class="meter__val mono"><b>0</b>%</span></div>
+              <div class="meter__bar"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="playground" data-cursor="Arraste">
+          <div class="playground__hint mono"><span class="pulse"></span> Playground — arraste, jogue, bagunce a stack</div>
+          <div class="playground__reset mono" role="button" tabindex="0">↻ Reorganizar</div>
+          <div class="playground__world"></div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__row" data-dir="1"><div class="marquee__inner"></div></div>
+        <div class="marquee__row marquee__row--alt" data-dir="-1"><div class="marquee__inner"></div></div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICADOS ============ -->
+    <section class="certs" id="certificados" data-section>
+      <div class="container">
+        <div class="section-head">
+          <p class="mono label"><span>04</span> Certificados</p>
+          <span class="section-head__line"></span>
+        </div>
+        <div class="certs__head">
+          <h2 class="display" data-split><span data-cert-total>60</span> certificados. <em>Uma obsessão</em> por aprender.</h2>
+          <div class="certs__controls">
+            <button class="round-btn" data-rail="prev" aria-label="Anterior" data-cursor="←"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="round-btn" data-rail="next" aria-label="Próximo" data-cursor="→"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrar por escola"></div>
+      </div>
+
+      <div class="rail" data-lenis-prevent-horizontal data-cursor="Arraste">
+        <div class="rail__track"></div>
+      </div>
+      <div class="container">
+        <div class="rail__progress"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section class="quote container" data-section>
+      <svg class="quote__logo" viewBox="0 0 2048 2048" fill="none" aria-hidden="true">
+        <circle class="quote__ring" cx="1024" cy="1024" r="745" stroke="currentColor" stroke-width="18"/>
+        <g transform="translate(0 2048) scale(.1 -.1)"><path class="quote__letters" fill="currentColor" d="M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z"/></g>
+      </svg>
+      <blockquote>
+        <p class="quote__text" data-scrub-words>“Programar é ver a criatividade ganhar vida com cada linha de código — é transformar ideias em experiências digitais.”</p>
+        <footer class="mono">Alexandre Delaboneta — Desenvolvedor Full Stack IA</footer>
+      </blockquote>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="contact" id="contato" data-section>
+      <div class="container">
+        <div class="section-head">
+          <p class="mono label"><span>05</span> Contato</p>
+          <span class="section-head__line"></span>
+        </div>
+        <h2 class="contact__title display" data-split>Vamos criar algo <em>juntos?</em></h2>
+        <p class="contact__sub" data-fade>Traduzindo ideias em realidade digital. Escolha o canal — respondo rápido.</p>
+      </div>
+
+      <ul class="socials">
+        <li>
+          <a class="social" href="https://www.instagram.com/imxandx/" target="_blank" rel="noopener" data-cursor="Abrir">
+            <span class="social__fill" aria-hidden="true"></span>
+            <span class="container social__inner">
+              <span class="social__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="10"/><circle cx="24" cy="24" r="8"/><circle cx="34" cy="14" r="1.8" class="solid"/></svg>
+              </span>
+              <span class="social__name">Instagram</span>
+              <span class="social__handle mono">@imxandx</span>
+              <span class="social__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="social" href="https://linkedin.com/in/alexandre-delaboneta" target="_blank" rel="noopener" data-cursor="Abrir">
+            <span class="social__fill" aria-hidden="true"></span>
+            <span class="container social__inner">
+              <span class="social__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="6"/><path d="M16 21v12M16 15.5v.5M23 33V21m0 5c0-3 2-5 4.5-5S32 23 32 26v7"/></svg>
+              </span>
+              <span class="social__name">LinkedIn</span>
+              <span class="social__handle mono">/alexandre-delaboneta</span>
+              <span class="social__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="social" href="https://github.com/imxandx" target="_blank" rel="noopener" data-cursor="Abrir">
+            <span class="social__fill" aria-hidden="true"></span>
+            <span class="container social__inner">
+              <span class="social__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path transform="translate(6 6) scale(1.5)" style="stroke-width:1.73" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </span>
+              <span class="social__name">GitHub</span>
+              <span class="social__handle mono">@imxandx</span>
+              <span class="social__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true"><span data-footer-split>Delaboneta</span></div>
+    <div class="footer__bar container mono">
+      <span>© 2026 Alexandre Delaboneta</span>
+      <a href="#inicio" class="roll" data-cursor="Topo"><span data-text="Voltar ao topo ↑">Voltar ao topo ↑</span></a>
+    </div>
+  </footer>
+
+  <!-- ============ ATLAS (assistente) ============ -->
+  <div class="bot" data-bot>
+    <div class="bot__teaser" role="status">
+      <span>Ficou com alguma dúvida? <b>O Atlas te guia</b> 👋</span>
+      <button class="bot__teaser-x" aria-label="Dispensar">✕</button>
+    </div>
+
+    <button class="bot__launcher" aria-label="Abrir assistente Atlas" aria-expanded="false" data-cursor="Atlas">
+      <svg class="bot__launcher-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5c0-4.4 3.6-7.5 8-7.5s8 3.1 8 7.5-3.6 7.5-8 7.5c-1.2 0-2.3-.2-3.3-.6L4.5 20.5l1.2-3.6C4.6 15.7 4 14.2 4 12.5z"/><path d="M9 12.5h.01M12 12.5h.01M15 12.5h.01" stroke-width="2.4"/></svg>
+      <svg class="bot__launcher-x" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      <span class="bot__launcher-text">Fale comigo</span>
+      <span class="bot__badge" aria-hidden="true"></span>
+    </button>
+
+    <section class="bot__panel" role="dialog" aria-label="Atlas — assistente" aria-hidden="true">
+      <header class="bot__head">
+        <span class="bot__avatar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg><i></i></span>
+        <div class="bot__who">
+          <strong>Atlas</strong>
+          <span class="mono"><span class="bot__dot"></span><span data-bot-status>online · responde na hora</span></span>
+        </div>
+        <button class="bot__icon-btn" data-bot-reset aria-label="Recomeçar conversa" data-cursor="Limpar"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg></button>
+        <button class="bot__icon-btn" data-bot-close aria-label="Fechar" data-cursor="Fechar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </header>
+
+      <div class="bot__body" data-lenis-prevent>
+        <div class="bot__stream"></div>
+      </div>
+
+      <form class="bot__form" autocomplete="off">
+        <span class="bot__prompt mono">&gt;_</span>
+        <input type="text" name="q" placeholder="Digite sua pergunta…" aria-label="Sua pergunta" maxlength="160">
+        <button type="submit" aria-label="Enviar" data-cursor="Enviar"><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6l6 6-6 6"/></svg></button>
+      </form>
+    </section>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <dialog class="lightbox" aria-label="Certificado">
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__panel">
+      <div class="lightbox__top mono">
+        <span class="lightbox__count">01 / 60</span>
+        <button class="lightbox__close" data-close aria-label="Fechar">Fechar <span>✕</span></button>
+      </div>
+      <div class="lightbox__stage">
+        <button class="lightbox__nav lightbox__nav--prev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="lightbox__frame"><img alt=""></div>
+        <button class="lightbox__nav lightbox__nav--next" aria-label="Próximo"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <div class="lightbox__meta">
+        <h3 class="lightbox__title"></h3>
+        <p class="mono lightbox__info"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./assets/vendor/gsap.min.js" defer></script>
+  <script src="./assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="./assets/vendor/SplitText.min.js" defer></script>
+  <script src="./assets/vendor/lenis.min.js" defer></script>
+  <script src="./assets/vendor/matter.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/bot.js" defer></script>
+</body>
+</html>

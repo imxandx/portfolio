@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Página não encontrada · Alexandre Delaboneta</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a0c">
+  <script>
+    // GitHub Pages serve este arquivo em qualquer caminho: descobre a raiz do site
+    (function () {
+      var seg = location.pathname.split("/")[1];
+      var base = location.hostname.endsWith("github.io") && seg ? "/" + seg + "/" : "/";
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 2048 2048%22%3E%3Crect width=%222048%22 height=%222048%22 rx=%22420%22 fill=%22%230a0a0c%22/%3E%3Ccircle cx=%221024%22 cy=%221024%22 r=%22745%22 fill=%22none%22 stroke=%22%23d7ff3a%22 stroke-width=%2244%22/%3E%3Cg transform=%22translate(0 2048) scale(.1 -.1)%22%3E%3Cpath fill=%22%23f3f1ea%22 d=%22M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z%22/%3E%3C/g%3E%3C/svg%3E">
+  <style>
+    @font-face { font-family: "Montserrat"; src: url("assets/fonts/montserrat-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+    @font-face { font-family: "Instrument Serif"; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); font-style: italic; font-display: swap; }
+    @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2"); font-weight: 100 800; font-display: swap; }
+    :root { --ink: #0a0a0c; --paper: #f3f1ea; --acc: #d7ff3a; --violet: #6d5dfc; --ease: cubic-bezier(.22,1,.36,1); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body { background: var(--ink); color: var(--paper); font-family: "Montserrat", system-ui, sans-serif; overflow: hidden; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    em { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; }
+    .mono { font-family: "JetBrains Mono", monospace; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+    canvas { position: fixed; inset: 0; width: 100%; height: 100%; }
+    .glow { position: fixed; width: 80vmax; height: 80vmax; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(109,93,252,.28), transparent 70%); pointer-events: none; }
+    .grain { position: fixed; inset: -50%; pointer-events: none; opacity: .07; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); animation: grain 1s steps(6) infinite; }
+    @keyframes grain { 0%{transform:translate(0,0)} 25%{transform:translate(-4%,3%)} 50%{transform:translate(3%,-5%)} 75%{transform:translate(-2%,6%)} 100%{transform:translate(0,0)} }
+
+    .top, .bottom { position: fixed; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 20px clamp(16px, 3.4vw, 48px); z-index: 5; }
+    .top { top: 0; } .bottom { bottom: 0; color: rgba(243,241,234,.5); display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; }
+    .bottom > :first-child { justify-self: start; } .bottom > :nth-child(2) { justify-self: center; text-align: center; } .bottom > :last-child { justify-self: end; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .logo { width: 46px; height: 46px; display: block; transition: transform .8s var(--ease); }
+    .logo:hover { transform: rotate(360deg); }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: #ff4d4d; display: inline-block; margin-right: 10px; box-shadow: 0 0 0 0 rgba(255,77,77,.6); animation: p 1.6s infinite; }
+    @keyframes p { to { box-shadow: 0 0 0 10px rgba(255,77,77,0); } }
+
+    main { position: relative; z-index: 4; height: 100%; display: grid; place-items: center; text-align: center; padding: 90px 16px; }
+    .stage { display: grid; justify-items: center; gap: clamp(18px, 3vh, 30px); }
+    .code { display: flex; align-items: center; gap: .02em; font-weight: 800; font-size: clamp(7rem, 30vw, 26rem); line-height: .8; letter-spacing: -.07em; user-select: none; }
+    .code > span { display: inline-block; will-change: transform; }
+    .planet { width: .78em; height: .78em; position: relative; display: grid; place-items: center; margin-inline: .04em; }
+    .planet > span { display: block; }
+    .planet__core { width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 32% 30%, #f7ffd6 0%, var(--acc) 22%, #6a8a00 62%, #1a2200 100%); box-shadow: inset -.08em -.06em .2em rgba(0,0,0,.6), 0 0 .5em rgba(215,255,58,.25); }
+    .planet__ring { position: absolute; left: -25%; top: 30%; width: 150%; height: 40%; border: .025em solid rgba(243,241,234,.8); border-radius: 50%; transform: rotate(-18deg); clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); }
+    .planet__ring--back { clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); z-index: -1; opacity: .45; }
+    .moon { position: absolute; width: .09em; height: .09em; border-radius: 50%; background: var(--paper); top: 50%; left: 50%; margin: -.045em 0 0 -.045em; animation: orbit 5s linear infinite; box-shadow: 0 0 .1em var(--paper); }
+    @keyframes orbit { from { transform: rotate(0deg) translateX(.62em) rotate(0deg); } to { transform: rotate(360deg) translateX(.62em) rotate(-360deg); } }
+
+    h1 { font-size: clamp(1.8rem, 4.6vw, 4rem); font-weight: 700; letter-spacing: -.045em; line-height: 1; }
+    h1 em { color: var(--acc); font-size: 1.1em; }
+    p.lead { max-width: 46ch; color: rgba(243,241,234,.65); font-size: clamp(15px, 1.2vw, 18px); line-height: 1.55; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 6px; }
+    .btn { position: relative; display: inline-flex; align-items: center; gap: 12px; padding: 18px 28px; border-radius: 99px; font-weight: 600; font-size: 15px; overflow: hidden; isolation: isolate; transition: color .5s var(--ease); }
+    .btn--primary { background: var(--acc); color: var(--ink); }
+    .btn--ghost { border: 1px solid rgba(243,241,234,.25); }
+    .btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--paper); transform: translateY(101%); border-radius: inherit; transition: transform .6s var(--ease); }
+    .btn:hover::before { transform: none; }
+    .btn--ghost:hover { color: var(--ink); }
+    .btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .6s var(--ease); }
+    .btn:hover svg { transform: translateX(-4px); }
+    .hint { color: rgba(243,241,234,.4); }
+    .warp-flash { position: fixed; inset: 0; background: var(--paper); opacity: 0; pointer-events: none; z-index: 10; }
+    @media (max-width: 600px) { .bottom { grid-template-columns: 1fr 1fr; } .bottom .hide-sm { display: none; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <canvas aria-hidden="true"></canvas>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="top">
+    <a href="./" class="logo" aria-label="Voltar ao início" data-home>
+      <svg viewBox="0 0 2048 2048" fill="none" aria-hidden="true"><circle cx="1024" cy="1024" r="745" stroke="currentColor" stroke-width="44"/><g transform="translate(0 2048) scale(.1 -.1)"><path fill="currentColor" d="M7890 12685 l0 -3255 1870 0 1870 0 0 13 0 13 -14 54 -14 55 -17 85 -16 85 -5 18 -5 17 -1665 0 -1664 0 0 3085 0 3085 -170 0 -170 0 0 -3255z M10466 14973 l-27 -128 -49 -230 -49 -230 -55 -260 -55 -260 -66 -310 -66 -310 -49 -230 -49 -230 -66 -310 -66 -310 -59 -280 -59 -280 -56 -260 -56 -260 -60 -285 -61 -285 -54 -260 -54 -260 -6 -17 -5 -18 174 0 174 0 6 33 6 32 66 310 66 310 55 255 54 255 54 255 54 255 61 285 60 285 66 310 66 310 49 230 49 230 66 310 66 310 55 265 56 265 7 13 8 14 31 -154 31 -153 56 -260 56 -260 55 -260 55 -260 39 -185 40 -185 41 -190 40 -190 54 -255 53 -255 41 -190 40 -190 21 -95 20 -95 55 -260 56 -260 50 -240 50 -240 15 -65 15 -65 44 -210 45 -210 66 -310 65 -310 54 -255 54 -255 46 -215 46 -215 38 -180 39 -180 63 -297 63 -298 173 0 173 0 -5 23 -5 22 -34 155 -34 155 -22 110 -22 110 -29 135 -30 135 -50 235 -49 235 -55 260 -56 260 -65 305 -65 305 -48 230 -49 230 -62 290 -62 290 -64 305 -65 305 -54 255 -54 255 -61 285 -61 285 -55 260 -55 260 -35 165 -34 165 -40 180 -39 180 -41 195 -41 195 -55 260 -55 260 -58 275 -58 275 -220 3 -219 2 -28 -127z M9370 6905 l0 -2365 1135 0 1135 0 0 170 0 170 -965 0 -965 0 0 1015 0 1015 870 0 870 0 0 170 0 170 -867 2 -868 3 -3 1008 -2 1007 -170 0 -170 0 0 -2365z"/></g></svg>
+    </a>
+    <span class="mono"><span class="pulse"></span>Sinal perdido</span>
+  </header>
+
+  <main>
+    <div class="stage">
+      <div class="code" aria-label="404">
+        <span data-depth="1.2">4</span>
+        <span class="planet" data-depth="-.6" aria-hidden="true">
+          <span class="planet__ring planet__ring--back"></span>
+          <span class="planet__core"></span>
+          <span class="planet__ring"></span>
+          <span class="moon"></span>
+        </span>
+        <span data-depth=".8">4</span>
+      </div>
+      <h1 class="reveal">Nada encontrado <em>aqui.</em></h1>
+      <p class="lead reveal">A página que você procura não existe ou foi removida. Confira o endereço ou volte para a página inicial.</p>
+      <div class="actions reveal">
+        <a href="./" class="btn btn--primary" data-home><svg viewBox="0 0 24 24"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>Voltar ao início</a>
+      </div>
+      <p class="mono hint reveal">Dica: clique em qualquer lugar da tela ✦</p>
+    </div>
+  </main>
+
+  <footer class="bottom mono">
+    <span>Erro 404</span>
+    <span class="hide-sm">Alexandre Delaboneta ©2026</span>
+    <span data-coords>0.000, 0.000</span>
+  </footer>
+  <div class="warp-flash" aria-hidden="true"></div>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var canvas = document.querySelector("canvas"), ctx = canvas.getContext("2d");
+    var w, h, dpr, stars = [], speed = .6, target = .6, mx = 0, my = 0, cx = 0, cy = 0;
+    function resize() {
+      dpr = Math.min(devicePixelRatio || 1, 2); w = innerWidth; h = innerHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      stars = []; for (var i = 0; i < Math.min(700, w * h / 2200); i++) stars.push(newStar(true));
+    }
+    function newStar(any) { return { x: (Math.random() - .5) * w * 2, y: (Math.random() - .5) * h * 2, z: any ? Math.random() * w : w, pz: 0 }; }
+    resize(); addEventListener("resize", resize);
+
+    addEventListener("pointermove", function (e) {
+      mx = (e.clientX / w - .5); my = (e.clientY / h - .5);
+      document.querySelector("[data-coords]").textContent = (mx * 360).toFixed(3) + ", " + (my * -180).toFixed(3);
+    });
+
+    function frame() {
+      speed += (target - speed) * .06;
+      cx += (mx - cx) * .05; cy += (my - cy) * .05;
+      ctx.fillStyle = speed > 4 ? "rgba(10,10,12,.35)" : "rgba(10,10,12,1)";
+      ctx.fillRect(0, 0, w, h);
+      var ox = w / 2 - cx * 120, oy = h / 2 - cy * 120;
+      for (var i = 0; i < stars.length; i++) {
+        var s = stars[i];
+        s.pz = s.z; s.z -= speed * 2.2;
+        if (s.z < 1) { stars[i] = newStar(false); continue; }
+        var k = 128 / s.z, px = s.x * k + ox, py = s.y * k + oy;
+        var pk = 128 / s.pz, ppx = s.x * pk + ox, ppy = s.y * pk + oy;
+        var a = Math.min(1, (1 - s.z / w) * 1.4), r = Math.max(.3, (1 - s.z / w) * 1.8);
+        ctx.strokeStyle = i % 9 === 0 ? "rgba(215,255,58," + a + ")" : "rgba(243,241,234," + a + ")";
+        ctx.lineWidth = r;
+        ctx.beginPath(); ctx.moveTo(ppx, ppy); ctx.lineTo(px, py); ctx.stroke();
+      }
+      requestAnimationFrame(frame);
+    }
+    if (!reduced) frame(); else { ctx.fillStyle = "#0a0a0c"; ctx.fillRect(0, 0, w, h); }
+
+    // clique no espaço = dobra espacial
+    addEventListener("pointerdown", function (e) { if (!e.target.closest("a")) target = 14; });
+    addEventListener("pointerup", function () { target = .6; });
+
+    if (!window.gsap || reduced) return;
+    gsap.from(".code > span", { yPercent: 120, opacity: 0, rotate: 12, duration: 1.6, stagger: .12, ease: "expo.out" });
+    gsap.from(".planet", { scale: 0, duration: 2, ease: "elastic.out(1,.5)", delay: .2 });
+    gsap.from(".reveal", { y: 30, opacity: 0, duration: 1.2, stagger: .1, ease: "expo.out", delay: .5 });
+    gsap.from(".top, .bottom", { opacity: 0, duration: 1.2, delay: .8 });
+
+    // parallax dos dígitos
+    var layers = [].slice.call(document.querySelectorAll("[data-depth]"));
+    gsap.ticker.add(function () {
+      layers.forEach(function (l) {
+        var d = +l.dataset.depth;
+        gsap.set(l, { x: cx * 60 * d, y: cy * 40 * d, rotate: cx * 8 * d });
+      });
+    });
+    // flutuação
+    gsap.to(".planet__core", { y: -10, duration: 2.4, yoyo: true, repeat: -1, ease: "sine.inOut" });
+
+    // voltar com efeito de dobra
+    document.querySelectorAll("[data-home]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault(); var href = a.href; target = 30;
+        gsap.timeline()
+          .to(".stage", { scale: .6, opacity: 0, duration: .8, ease: "expo.in" })
+          .to(".warp-flash", { opacity: 1, duration: .35, ease: "power2.in" }, .55)
+          .add(function () { location.href = href; });
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
